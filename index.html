@@ -1,28 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><!DOCTYPE html  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width initial-scale=1" />
-
-  <title>Francesco Poziello | R&D Project Engineer</title>
-
+  <!-- CSS -->
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
   <link rel="stylesheet" href="/assets/css/style.css" />
 
+  <!-- TITLE -->
+  <title>Francesco Poziello | R&D Project Engineer</title>
+
+  <!-- META -->
   <meta name="author" content="Francesco Poziello" />
   <meta name="description" content="R&D Project Engineer working on PCB design, neural interfaces, signal and power integrity." />
+
+  <!-- ✅ FAVICON -->
+  <link rel="icon" type="image/png" href="/assets/img/favicon/cpu.png" />
+
 </head>
 
 <body>
 
   <!-- NAV -->
   <nav class="hide-on-small-only">
-    <ul class="side-nav fixed">
+    <ul class="side-nav fixed section table-of-contents">
 
       <li class="logo">
-        <img src="/assets/img/fp_pic.png" class="circle img-responsive profile-pic" alt="profile">
+        <a href="#intro">
+          <img src="/assets/img/fp_pic.png" class="circle responsive-img profile-pic">
+        </a>
       </li>
 
       <li><a href="#about">About</a></li>
@@ -37,29 +42,46 @@
   <main>
 
     <!-- HERO -->
-    <section id="intro" class="section full-height" style="background:#004d40; color:white;">
-      <div class="container" style="margin-top:100px;">
-        <h2>Hi, I'm <span class="teal lighten-2">Francesco Poziello</span></h2>
+    <section id="intro" class="section scrollspy full-height">
+      <div class="container">
+        <div class="content" style="margin-top: 80px;">
 
-        <h5 id="typing"></h5>
+          <h2>Hi, I'm <span class="teal">Francesco Poziello.</span></h2>
 
-        <p>
-          R&D Project Engineer at imec working on circuits for neural interfaces,
-          PCB design and system-level hardware development.
-        </p>
+          <h5 style="color:#fff">
+            A <span class="typing"></span>
+          </h5>
 
-        <br>
+          <h5>
+            R&D Project Engineer at imec working on circuits for neural interfaces,
+            PCB design and system-level hardware development.
+          </h5>
 
-        <a href="#about" class="btn teal">Read More</a>
-        <a href="#contact" class="btn grey">Contact Me</a>
+          <div class="social">
+            <a href="https://www.linkedin.com/in/francescopoziello/" target="_blank">
+              <button class="icon-btn linkedin"><i class="fa fa-linkedin"></i></button>
+            </a>
+
+            <a href="https://github.com/poziellofrancesco" target="_blank">
+              <button class="icon-btn github"><i class="fa fa-github"></i></button>
+            </a>
+          </div>
+
+          <div class="buttons">
+            <a href="#about" class="readme">Read More</a>
+            <a href="#contact" class="contactme">Contact Me</a>
+          </div>
+
+        </div>
       </div>
     </section>
 
     <!-- ABOUT -->
-    <section id="about" class="section">
-      <h3 class="page-title teal white-text">About</h3>
+    <section id="about" class="section scrollspy">
+      <h3 class="page-title white-text teal">About</h3>
 
-      <div class="container">
+      <div class="container flow-text">
+
         <p>
           I am an R&D Project Engineer at imec working on circuits for neural interfaces.
         </p>
@@ -75,19 +97,26 @@
         <p>
           I enjoy solving complex engineering problems using analytical and practical approaches.
         </p>
+
       </div>
     </section>
 
     <!-- EXPERIENCE -->
-    <section id="experience" class="section">
-      <h3 class="page-title teal white-text">Experience</h3>
+    <section id="experience" class="section scrollspy">
+      <h3 class="page-title white-text teal">Experience</h3>
 
       <div class="container">
 
         <div class="card">
           <div class="card-content">
-            <span class="card-title">imec</span>
-            <div class="role">R&D Project Engineer</div>
+
+            <span class="card-title">
+              <a class="teal-text hoverline">imec</a>
+            </span>
+
+            <div class="role brown-text text-darken-2">
+              R&D Project Engineer – Circuits for Neural Interfaces
+            </div>
 
             <ul>
               <li>Design of PCB and flexible PCBs for neural interfaces</li>
@@ -96,6 +125,11 @@
               <li>Power integrity and voltage drop estimation</li>
               <li>Lab testing and validation</li>
             </ul>
+
+          </div>
+
+          <div class="card-action">
+            <span>2024 – Present | Leuven, Belgium</span>
           </div>
         </div>
 
@@ -103,20 +137,21 @@
     </section>
 
     <!-- PROJECTS -->
-    <section id="projects" class="section">
-      <h3 class="page-title teal white-text">Projects</h3>
+    <section id="projects" class="section scrollspy">
+      <h3 class="page-title white-text teal">Projects</h3>
 
       <div class="container">
-        <p>Projects coming soon (PCB design, ASIC integration, SI analysis).</p>
+        <p>
+          Projects coming soon (PCB design, ASIC integration, signal integrity).
+        </p>
       </div>
     </section>
 
     <!-- SKILLS -->
-    <section id="skills" class="section">
-      <h3 class="page-title teal white-text">Skills</h3>
+    <section id="skills" class="section scrollspy">
+      <h3 class="page-title white-text teal">Skills</h3>
 
       <div class="container">
-
         <ul>
           <li>PCB Tools: Altium Designer, Mentor Expedition</li>
           <li>Signal Integrity & Power Integrity</li>
@@ -124,25 +159,31 @@
           <li>Python, C/C++</li>
           <li>Lab testing & validation</li>
         </ul>
-
       </div>
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="section">
-      <h3 class="page-title teal white-text">Contact</h3>
+    <section id="contact" class="section scrollspy">
+      <h3 class="page-title white-text teal">Contact</h3>
 
       <div class="container">
 
-        <p>Email: <a href="mailto:poziellofrancesco@gmail.com">poziellofrancesco@gmail.com</a></p>
+        <p>
+          Email:
+          <a href="mailto:poziellofrancesco@gmail.com">
+            poziellofrancesco@gmail.com
+          </a>
+        </p>
 
-        <p>GitHub: 
+        <p>
+          GitHub:
           <a href="https://github.com/poziellofrancesco" target="_blank">
             github.com/poziellofrancesco
           </a>
         </p>
 
-        <p>LinkedIn:
+        <p>
+          LinkedIn:
           <a href="https://www.linkedin.com/in/francescopoziello/" target="_blank">
             linkedin.com/in/francescopoziello
           </a>
@@ -153,20 +194,32 @@
 
   </main>
 
-  <!-- SCRIPTS -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <!-- JS -->
+
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
 
   <script>
-    const roles = ["PCB Designer", "Signal Integrity", "Neural Interfaces"];
-    let i = 0;
+    var typed = new Typed('.typing', {
+      strings: ["PCB Designer", "Signal Integrity", "Neural Interfaces"],
+      loop: true,
+      typeSpeed: 80,
+      backSpeed: 40
+    });
+  </script>
 
-    function typing() {
-      document.getElementById("typing").innerHTML = roles[i];
-      i = (i + 1) % roles.length;
-    }
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
 
-    setInterval(typing, 1500);
+  <script>
+    $(document).ready(function () {
+      $(".scrollspy").scrollSpy();
+      $(".button-collapse").sideNav({ closeOnClick: true });
+    });
   </script>
 
 </body>
 </html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
